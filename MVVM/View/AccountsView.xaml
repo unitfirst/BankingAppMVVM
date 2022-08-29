@@ -122,7 +122,7 @@
                                Text="First name"/>
                     <TextBox Style="{StaticResource TextBox.Default.Style}" 
                              x:Name="tbFirstName"
-                             Text="{Binding SelectedAccount.FirstName, UpdateSourceTrigger=PropertyChanged}"/>
+                             Text="{Binding SelectedAccount.FirstName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
 
                     <TextBlock Style="{StaticResource SubTitle.Style}" 
                                Text="Last name"/>
@@ -140,7 +140,7 @@
                                Text="Passport"/>
                     <TextBox Style="{StaticResource TextBox.Default.Style}"
                              x:Name="tbPassport"
-                             Text="{Binding SelectedAccount.Passport, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                             Text="{Binding SelectedAccount.Passport, UpdateSourceTrigger=PropertyChanged}"/>
 
                     <StackPanel Orientation="Horizontal"
                                 VerticalAlignment="Bottom"
@@ -150,15 +150,15 @@
                         <Button x:Name="ApplyButton" 
                                 Style="{StaticResource Button.Default.Style}" 
                                 Content="Apply"
-                                Command="{Binding AddCommand}">
+                                Command="{Binding ApplyCommand}"
+                                CommandParameter="{Binding SelectedAccount}">
                         </Button>
 
-
                         <Button x:Name="DeleteButton" 
-                                Command="{Binding RemoveCommand}" 
-                                CommandParameter="{Binding SelectedAccount}"
                                 Style="{StaticResource Button.Delete.Style}"
-                                Content="🚫 Delete account"/>
+                                Content="🚫 Delete account"
+                                Command="{Binding RemoveCommand}" 
+                                CommandParameter="{Binding SelectedAccount}"/>
                     </StackPanel>
                 </StackPanel>
 

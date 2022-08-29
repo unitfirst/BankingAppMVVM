@@ -197,7 +197,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Core\ApplicationContext.cs" />
     <Compile Include="Core\Extensions.cs" />
     <Compile Include="Core\ObservableObject.cs" />
     <Compile Include="Core\RelayCommand.cs" />

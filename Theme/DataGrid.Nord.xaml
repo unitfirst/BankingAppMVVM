@@ -102,7 +102,7 @@
                 Value="False"/>
 
         <Setter Property="IsReadOnly"
-                Value="False"/>
+                Value="True"/>
 
         <Setter Property="Template">
             <Setter.Value>
