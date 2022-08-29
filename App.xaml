@@ -1,0 +1,43 @@
+﻿<Application x:Class="BankingAppMVVM.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:BankingAppMVVM"
+             xmlns:view="clr-namespace:BankingAppMVVM.MVVM.View"
+             xmlns:vms="clr-namespace:BankingAppMVVM.MVVM.ViewModel"
+             StartupUri="MVVM/View/MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/ColorStyle.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/TitleBarButton.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/Title.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/SubTitle.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/MenuButton.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/DataGrid.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/Button.Default.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/Button.Delete.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/ScrollBar.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/TextBox.Default.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/TextBox.Search.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/ResizeGrip.Nord.xaml"/>
+                <ResourceDictionary Source="Assets/Icons.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type vms:SettingsViewModel}">
+                <view:SettingsView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vms:AccountsViewModel}">
+                <view:AccountsView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vms:NewAccountViewModel}">
+                <view:AddAccountView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vms:AboutViewModel}">
+                <view:AboutView/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
