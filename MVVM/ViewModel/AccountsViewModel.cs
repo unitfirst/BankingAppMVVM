@@ -9,7 +9,7 @@ using System.Windows.Input;
 
 namespace BankingAppMVVM.MVVM.ViewModel
 {
-    internal class AccountsViewModel : ObservableObject
+    internal class AccountsViewModel : ViewModelBase
     {
         private RelayCommand _applyCommand;
         private RelayCommand _removeCommand;
@@ -26,7 +26,7 @@ namespace BankingAppMVVM.MVVM.ViewModel
             set
             {
                 _selectedAccount = value;
-                RaisePropertyChanged();
+                OnPropertyChanged();
             }
         }
 

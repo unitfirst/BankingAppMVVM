@@ -198,7 +198,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Core\Extensions.cs" />
-    <Compile Include="Core\ObservableObject.cs" />
+    <Compile Include="MVVM\ViewModel\Base\ViewModelBase.cs" />
     <Compile Include="Core\RelayCommand.cs" />
     <Compile Include="MVVM\ViewModel\AboutViewModel.cs" />
     <Compile Include="MVVM\ViewModel\AccountsViewModel.cs" />
@@ -302,7 +302,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="MVVM\View\Images\w-hand.gif" />
   </ItemGroup>
