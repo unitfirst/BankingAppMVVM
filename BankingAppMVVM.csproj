@@ -198,17 +198,22 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Core\Extensions.cs" />
+    <Compile Include="Data\Repository.cs" />
+    <Compile Include="MVVM\Model\Consultant.cs" />
+    <Compile Include="MVVM\Model\Employee.cs" />
+    <Compile Include="MVVM\Model\Manager.cs" />
     <Compile Include="MVVM\ViewModel\Base\ViewModelBase.cs" />
     <Compile Include="Core\RelayCommand.cs" />
     <Compile Include="MVVM\ViewModel\AboutViewModel.cs" />
     <Compile Include="MVVM\ViewModel\AccountsViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\GlobalViewModel.cs" />
     <Compile Include="MVVM\ViewModel\NewAccountViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
     <Compile Include="MVVM\ViewModel\SettingsViewModel.cs" />
     <Compile Include="MVVM\View\AboutView.xaml.cs">
       <DependentUpon>AboutView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MVVM\Model\AccountModel.cs" />
+    <Compile Include="MVVM\Model\Account.cs" />
     <Compile Include="MVVM\View\AccountsView.xaml.cs">
       <DependentUpon>AccountsView.xaml</DependentUpon>
     </Compile>
@@ -302,9 +307,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="MVVM\View\Images\w-hand.gif" />
   </ItemGroup>

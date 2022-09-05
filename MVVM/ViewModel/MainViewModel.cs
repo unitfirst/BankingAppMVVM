@@ -62,5 +62,6 @@ namespace BankingAppMVVM.MVVM.ViewModel
             ShowNewAccountView = new RelayCommand(o => { CurrentView = NewAccountVM; });
             ShowAboutView = new RelayCommand(o => { CurrentView = AboutVM; });
         }
+
     }
 }

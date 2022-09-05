@@ -8,5 +8,6 @@ namespace BankingAppMVVM.MVVM.ViewModel
 {
     internal class SettingsViewModel
     {
+        public GlobalViewModel Access { get; } = GlobalViewModel.Global;
     }
 }

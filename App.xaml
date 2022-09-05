@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:BankingAppMVVM"
              xmlns:view="clr-namespace:BankingAppMVVM.MVVM.View"
-             xmlns:vms="clr-namespace:BankingAppMVVM.MVVM.ViewModel"
-             StartupUri="MVVM/View/MainWindow.xaml">
+             xmlns:vms="clr-namespace:BankingAppMVVM.MVVM.ViewModel">
+    
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

@@ -3,11 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:BankingAppMVVM.MVVM.View"
+             xmlns:local="clr-namespace:BankingAppMVVM.MVVM.View" 
+             xmlns:viewmodel="clr-namespace:BankingAppMVVM.MVVM.ViewModel"
              mc:Ignorable="d" 
              d:DesignHeight="450" 
              d:DesignWidth="800"
              Background="{StaticResource Color.Main.Onyx.Dark}">
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
@@ -15,20 +17,38 @@
             <RowDefinition/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Row="1" 
+                    Grid.Column="0"
                     Orientation="Horizontal"
                     VerticalAlignment="Top">
-            <TextBlock
-                   Style="{StaticResource Title.Style}"
-                   Text="Accounts"/>
+
+            <TextBlock Style="{StaticResource Title.Style}"
+                       Text="Accounts"/>
 
             <TextBox Style="{StaticResource TextBox.Search.Style}"
                      Margin="20 3 0 0"></TextBox>
+
         </StackPanel>
-
-
-
+        
+        <StackPanel Orientation="Vertical"
+                    Grid.Column="1" 
+                    Grid.Row="1"
+                    VerticalAlignment="Top">
+            <TextBlock Text="Now working:" 
+                       FontSize="10"
+                       Foreground="{StaticResource Color.Main.Onyx.Light}"/>
+            <TextBlock Text="{Binding Global.Access}"
+                       FontSize="13"
+                       FontWeight="Light"
+                       Foreground="{StaticResource Color.Main.Yellow.Light}"
+                       Opacity="0.9"/>
+        </StackPanel>
+        
         <Grid Grid.Row="2"
               Margin="40 0 40 0">
             <Grid.ColumnDefinitions>
