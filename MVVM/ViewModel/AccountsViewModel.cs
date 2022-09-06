@@ -11,14 +11,13 @@ namespace BankingAppMVVM.MVVM.ViewModel
 {
     internal class AccountsViewModel : ViewModelBase
     {
-        private RelayCommand _applyCommand;
-        private RelayCommand _removeCommand;
-        private RelayCommand _addCommand;
+        private Command _applyCommand;
+        private Command _removeCommand;
+        private Command _addCommand;
         private Account _selectedAccount;
         public ICommand UpdateCommand { get; set; }
 
         public ObservableCollection<Account> Accounts { get; set; }
-        public GlobalViewModel Access { get; } = GlobalViewModel.Global;
 
         public Account SelectedAccount
         {
@@ -30,41 +29,41 @@ namespace BankingAppMVVM.MVVM.ViewModel
             }
         }
 
-        public RelayCommand RemoveCommand
-        {
-            get
-            {
-                return _removeCommand ??
-                    (_removeCommand = new RelayCommand(obj =>
-                    {
-                        if (obj is Account account)
-                        {
-                            Accounts.Remove(account);
-                        }
-                    },
-                    (obj) => Accounts.Count > 0));
-            }
-        }
-        public RelayCommand ApplyCommand
-        {
-            get
-            {
-                return _applyCommand ??
-                    (_applyCommand = new RelayCommand(obj =>
-                    {
-                        if (obj is Account account)
-                        {
-                            Account tempAccount = SelectedAccount;
-                            int index = Accounts.IndexOf(SelectedAccount);
+        //public Command RemoveCommand
+        //{
+        //    get
+        //    {
+        //        return _removeCommand ??
+        //            (_removeCommand = new Command(obj =>
+        //            {
+        //                if (obj is Account account)
+        //                {
+        //                    Accounts.Remove(account);
+        //                }
+        //            },
+        //            (obj) => Accounts.Count > 0));
+        //    }
+        //}
+        //public Command ApplyCommand
+        //{
+        //    get
+        //    {
+        //        return _applyCommand ??
+        //            (_applyCommand = new Command(obj =>
+        //            {
+        //                if (obj is Account account)
+        //                {
+        //                    Account tempAccount = SelectedAccount;
+        //                    int index = Accounts.IndexOf(SelectedAccount);
 
-                            Accounts.Remove(SelectedAccount);
-                            Accounts.Insert(index, tempAccount);
-                            SelectedAccount = tempAccount;
-                        }
-                    },
-                    (obj) => Accounts.Count > 0));
-            }
-        }
+        //                    Accounts.Remove(SelectedAccount);
+        //                    Accounts.Insert(index, tempAccount);
+        //                    SelectedAccount = tempAccount;
+        //                }
+        //            },
+        //            (obj) => Accounts.Count > 0));
+        //    }
+        //}
 
         public AccountsViewModel()
         {
