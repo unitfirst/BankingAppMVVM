@@ -1,25 +1,29 @@
 ﻿using BankingAppMVVM.Core;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 
 namespace BankingAppMVVM.MVVM.ViewModel
 {
     internal class MainViewModel : ViewModelBase
     {
-        private object _currentView;
-        public RelayCommand MoveWindowCommand { get; set; }
-        public RelayCommand ShutDownCommand { get; set; }
-        public RelayCommand MaximizeWindowCommand { get; set; }
-        public RelayCommand MinimizeWindowCommand { get; set; }
-        public RelayCommand ShowAccountsView { get; set; }
-        public RelayCommand ShowSettingsView { get; set; }
-        public RelayCommand ShowNewAccountView { get; set; }
-        public RelayCommand ShowAboutView { get; set; }
+        #region Command fields
+        public Command ShowAccountsView { get; set; }
+        public Command ShowSettingsView { get; set; }
+        public Command ShowNewAccountView { get; set; }
+        public Command ShowAboutView { get; set; }
 
+        #endregion
+
+        #region View fields
+
+        public AccountsViewModel AccountsVM { get; set; }
+        public SettingsViewModel SettingsVM { get; set; }
+        public NewAccountViewModel NewAccountVM { get; set; }
+        public AboutViewModel AboutVM { get; set; }
+
+        #endregion
+
+        #region Current View
+
+        private object _currentView;
         public object CurrentView
         {
             get { return _currentView; }
@@ -30,13 +34,12 @@ namespace BankingAppMVVM.MVVM.ViewModel
             }
         }
 
-        public AccountsViewModel AccountsVM { get; set; }
-        public SettingsViewModel SettingsVM { get; set; }
-        public NewAccountViewModel NewAccountVM { get; set; }
-        public AboutViewModel AboutVM { get; set; }
+        #endregion
 
         public MainViewModel()
         {
+            #region Views
+
             AccountsVM = new AccountsViewModel();
             NewAccountVM = new NewAccountViewModel();
             SettingsVM = new SettingsViewModel();
@@ -44,23 +47,21 @@ namespace BankingAppMVVM.MVVM.ViewModel
 
             CurrentView = AccountsVM;
 
-            //Toolbar comands//
-            MoveWindowCommand = new RelayCommand(o => { Application.Current.MainWindow.DragMove(); });
-            ShutDownCommand = new RelayCommand(o => { Application.Current.Shutdown(); });
-            MaximizeWindowCommand = new RelayCommand(o =>
-            {
-                if (Application.Current.MainWindow.WindowState == WindowState.Maximized)
-                    Application.Current.MainWindow.WindowState = WindowState.Normal;
-                else
-                    Application.Current.MainWindow.WindowState = WindowState.Maximized;
-            });
-            MinimizeWindowCommand = new RelayCommand(o => { Application.Current.MainWindow.WindowState = WindowState.Minimized; });
+            #endregion
 
-            //Change view//
-            ShowAccountsView = new RelayCommand(o => { CurrentView = AccountsVM; });
-            ShowSettingsView = new RelayCommand(o => { CurrentView = SettingsVM; });
-            ShowNewAccountView = new RelayCommand(o => { CurrentView = NewAccountVM; });
-            ShowAboutView = new RelayCommand(o => { CurrentView = AboutVM; });
+            #region Toolbar comands
+
+
+            #endregion
+
+            #region Change view
+
+            //ShowAccountsView = new Command(o => { CurrentView = AccountsVM; });
+            //ShowSettingsView = new Command(o => { CurrentView = SettingsVM; });
+            //ShowNewAccountView = new Command(o => { CurrentView = NewAccountVM; });
+            //ShowAboutView = new Command(o => { CurrentView = AboutVM; });
+
+            #endregion
         }
 
     }

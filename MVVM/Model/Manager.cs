@@ -8,5 +8,13 @@ namespace BankingAppMVVM.MVVM.Model
 {
     internal class Manager : Employee
     {
+        private int _userRole;
+
+        public int UserRole
+        {
+            get { return _userRole; }
+            set { _userRole = value; }
+        }
+
     }
 }

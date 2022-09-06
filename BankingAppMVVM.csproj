@@ -197,16 +197,20 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Core\Commands\Toolbar\MinimizeWindowCommand.cs" />
+    <Compile Include="Core\Commands\Toolbar\MaximizeWindowCommand.cs" />
+    <Compile Include="Core\Commands\Toolbar\MoveWindowCommand.cs" />
+    <Compile Include="Core\Commands\RelayCommand.cs" />
+    <Compile Include="Core\Commands\Toolbar\ShutDownCommand.cs" />
     <Compile Include="Core\Extensions.cs" />
     <Compile Include="Data\Repository.cs" />
     <Compile Include="MVVM\Model\Consultant.cs" />
     <Compile Include="MVVM\Model\Employee.cs" />
     <Compile Include="MVVM\Model\Manager.cs" />
     <Compile Include="MVVM\ViewModel\Base\ViewModelBase.cs" />
-    <Compile Include="Core\RelayCommand.cs" />
+    <Compile Include="Core\Commands\Base\Command.cs" />
     <Compile Include="MVVM\ViewModel\AboutViewModel.cs" />
     <Compile Include="MVVM\ViewModel\AccountsViewModel.cs" />
-    <Compile Include="MVVM\ViewModel\GlobalViewModel.cs" />
     <Compile Include="MVVM\ViewModel\NewAccountViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
     <Compile Include="MVVM\ViewModel\SettingsViewModel.cs" />

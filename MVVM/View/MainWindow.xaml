@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:BankingAppMVVM" 
         xmlns:extensions="clr-namespace:BankingAppMVVM.Core" 
         xmlns:viewmodel="clr-namespace:BankingAppMVVM.MVVM.ViewModel"
+        xmlns:cmd="clr-namespace:BankingAppMVVM.Core.Commands"
         mc:Ignorable="d"
         Title="MainWindow" 
         Height="700" 
@@ -30,8 +31,11 @@
                 CornerRadius="10 10 0 0">
 
             <Border.InputBindings>
-                <MouseBinding MouseAction="LeftClick"
-                              Command="{Binding MoveWindowCommand}"/>
+                <MouseBinding MouseAction="LeftClick">
+                    <MouseBinding.Command>
+                        <cmd:MoveWindowCommand/>
+                    </MouseBinding.Command>
+                </MouseBinding>
             </Border.InputBindings>
 
             <Grid>
@@ -52,15 +56,26 @@
                             HorizontalAlignment="Right"
                             Margin="0 0 4 0">
 
-                    <Button Command="{Binding MinimizeWindowCommand}"
-                            Padding="0 0 0 2"
-                            Content="—"/>
-                    <Button Command="{Binding MaximizeWindowCommand}"
-                            Padding="0 0 0 3"
-                            Content="🗖"/>
-                    <Button Command="{Binding ShutDownCommand}"
-                            Padding="0 0 0 2"
-                            Content="✕"/>
+                    <Button Padding="0 0 0 2"
+                            Content="—">
+                        <Button.Command>
+                            <cmd:MinimizeWindowCommand/>
+                        </Button.Command>
+                    </Button>
+
+                    <Button Padding="0 0 0 3"
+                            Content="🗖">
+                        <Button.Command>
+                            <cmd:MaximizeWindowCommand/>
+                        </Button.Command>
+                    </Button>
+                    
+                    <Button Padding="0 0 0 2"
+                            Content="✕">
+                        <Button.Command>
+                            <cmd:ShutDownCommand/>
+                        </Button.Command>
+                    </Button>
                 </StackPanel>
 
             </Grid>
@@ -117,6 +132,7 @@
                 <RadioButton Command="{Binding ShowSettingsView}"
                              Content="Settings"
                              extensions:Extensions.Icon="⚙️"/>
+                
                 <RadioButton Command="{Binding ShowAboutView}"
                              Content="About"
                              extensions:Extensions.Icon="🤚"/>
