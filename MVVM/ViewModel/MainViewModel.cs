@@ -8,7 +8,7 @@ using System.Windows;
 
 namespace BankingAppMVVM.MVVM.ViewModel
 {
-    internal class MainViewModel : ObservableObject
+    internal class MainViewModel : ViewModelBase
     {
         private object _currentView;
         public RelayCommand MoveWindowCommand { get; set; }
@@ -62,5 +62,6 @@ namespace BankingAppMVVM.MVVM.ViewModel
             ShowNewAccountView = new RelayCommand(o => { CurrentView = NewAccountVM; });
             ShowAboutView = new RelayCommand(o => { CurrentView = AboutVM; });
         }
+
     }
 }

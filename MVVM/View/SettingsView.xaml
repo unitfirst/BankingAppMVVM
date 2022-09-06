@@ -19,5 +19,17 @@
         <TextBlock Grid.Row="1" 
                    Style="{StaticResource Title.Style}"
                    Text="Settings"/>
+        
+        <ComboBox x:Name="UserList" 
+                  Grid.Row="2" 
+                  Margin="40 0"
+                  Width="200"
+                  HorizontalAlignment="Left"
+                  Height="30" 
+                  VerticalAlignment="Top"
+                  VerticalContentAlignment="Center">
+            <TextBlock>Consultant</TextBlock>
+            <TextBlock>Manager</TextBlock>
+        </ComboBox>
     </Grid>
 </UserControl>

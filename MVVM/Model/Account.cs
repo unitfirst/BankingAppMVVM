@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace BankingAppMVVM.MVVM.View
 {
-    public class AccountModel : INotifyPropertyChanged
+    public class Account : INotifyPropertyChanged
     {
         private readonly int _id;
         private string _firstName;

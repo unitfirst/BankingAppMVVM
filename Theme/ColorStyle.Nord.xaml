@@ -19,6 +19,13 @@
     <Color x:Key="Blue.Dark">#3122D3</Color>
     <Color x:Key="Blue.Light">#7C73E8</Color>
     <Color x:Key="Blue.Bright">#BEB9F4</Color>
+    <Color x:Key="Blue.Lavander">#86A5D9</Color>
+    <!--#endregion-->    
+    
+    <!--#region Yellow-->
+    <Color x:Key="Yellow.Default">#FAA613</Color>
+    <Color x:Key="Yellow.Light">#FDC35E</Color>
+    <Color x:Key="Yellow.Bright">#FEE8C3</Color>
     <!--#endregion-->
 
     <!--#region Red-->
@@ -54,6 +61,8 @@
                      Color="{StaticResource Blue.Light}"/>
     <SolidColorBrush x:Key="Color.Main.Blue.Bright"
                      Color="{StaticResource Blue.Bright}"/>
+    <SolidColorBrush x:Key="Color.Main.Blue.Lavander"
+                     Color="{StaticResource Blue.Lavander}"/>
 
     <SolidColorBrush x:Key="Color.Main.Red.Default"
                      Color="{StaticResource Red.Default}"/>
@@ -65,6 +74,9 @@
                      Color="{StaticResource Red.Light}"/>
     <SolidColorBrush x:Key="Color.Main.Red.Bright"
                      Color="{StaticResource Red.Bright}"/>
+
+    <SolidColorBrush x:Key="Color.Main.Yellow.Light"
+                     Color="{StaticResource Yellow.Light}"/>
 
     <!--#endregion-->
     
