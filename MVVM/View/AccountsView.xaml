@@ -34,21 +34,7 @@
                      Margin="20 3 0 0"></TextBox>
 
         </StackPanel>
-        
-        <StackPanel Orientation="Vertical"
-                    Grid.Column="1" 
-                    Grid.Row="1"
-                    VerticalAlignment="Top">
-            <TextBlock Text="Now working:" 
-                       FontSize="10"
-                       Foreground="{StaticResource Color.Main.Onyx.Light}"/>
-            <TextBlock Text="{Binding Global.Access}"
-                       FontSize="13"
-                       FontWeight="Light"
-                       Foreground="{StaticResource Color.Main.Yellow.Light}"
-                       Opacity="0.9"/>
-        </StackPanel>
-        
+
         <Grid Grid.Row="2"
               Margin="40 0 40 0">
             <Grid.ColumnDefinitions>

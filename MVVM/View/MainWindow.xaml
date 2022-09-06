@@ -24,7 +24,6 @@
 
     <DockPanel Background="Transparent"
                Margin="0">
-
         <Border Height="30"
                 Background="{StaticResource Color.Main.Onyx.Default}"
                 DockPanel.Dock="Top"
@@ -69,7 +68,7 @@
                             <cmd:MaximizeWindowCommand/>
                         </Button.Command>
                     </Button>
-                    
+
                     <Button Padding="0 0 0 2"
                             Content="✕">
                         <Button.Command>
@@ -81,12 +80,17 @@
             </Grid>
 
         </Border>
+        
+        <Border Height="1"
+                Margin="0 -1 0 0"
+                DockPanel.Dock="Top"
+                Background="{StaticResource Color.Main.Onyx.Darkest}"/>
 
         <Border Margin="0 -1 0 0" 
-                    Width="60"
-                    HorizontalAlignment="Left"
-                    Background="{StaticResource Color.Main.Onyx.Default}"
-                    CornerRadius="0 0 0 10">
+                Width="60"
+                DockPanel.Dock="Left"
+                Background="{StaticResource Color.Main.Onyx.Default}"
+                CornerRadius="0 0 0 10">
 
             <Border.Style>
                 <Style>
@@ -132,12 +136,45 @@
                 <RadioButton Command="{Binding ShowSettingsView}"
                              Content="Settings"
                              extensions:Extensions.Icon="⚙️"/>
-                
+
                 <RadioButton Command="{Binding ShowAboutView}"
                              Content="About"
                              extensions:Extensions.Icon="🤚"/>
             </StackPanel>
         </Border>
+        
+        <Border Width="1"
+                Margin="-1 0"
+                Background="{StaticResource Color.Main.Onyx.Darkest}"/>
+
+        <Border Margin="0 -1" 
+                Height="40"
+                Background="{StaticResource Color.Main.Onyx.Dark}"
+                DockPanel.Dock="Top">
+            <StackPanel Orientation="Horizontal"
+                        Margin="20 0"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Right">
+                <TextBlock Text="Now working:" 
+                           Margin="0 1 10 0"
+                           FontSize="10"
+                           Foreground="{StaticResource Color.Main.Onyx.Light}"
+                           VerticalAlignment="Center"/>
+                
+                <TextBlock Text="Consultant"
+                           FontSize="13"
+                           FontWeight="Light"
+                           Foreground="{StaticResource Color.Main.Yellow.Light}"
+                           Opacity="0.9"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+
+        <Border Height="2"
+                Margin="0 -1"
+                DockPanel.Dock="Top"
+                Background="{StaticResource Color.Main.Onyx.Light}"/>
+
         <ContentPresenter Margin="0 -1 0 0" 
                             Content="{Binding CurrentView}"/>
     </DockPanel>
