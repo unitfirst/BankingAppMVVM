@@ -39,7 +39,8 @@
                                        FontSize="{TemplateBinding FontSize}"
                                        Padding="{TemplateBinding Padding}"
                                        VerticalAlignment="Center"
-                                       Text="{Binding Path=(extensions:Extensions.Icon), RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                                       Text="{Binding Path=(extensions:Extensions.Icon), RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                       Style="{DynamicResource FontAwesome}"/>
                             <Image></Image>
                             
                             <ContentPresenter VerticalAlignment="Center" 

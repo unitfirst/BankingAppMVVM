@@ -31,7 +31,7 @@
 
     <DockPanel Background="Transparent"
                Margin="0">
-        <Border Height="30"
+        <Border Height="40"
                 Background="{StaticResource Color.Main.Onyx.Default}"
                 DockPanel.Dock="Top"
                 CornerRadius="10 10 0 0">
@@ -52,12 +52,12 @@
                            FontFamily="Montserrat"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Left"
-                           Margin="10 0 0 0"/>
+                           Margin="15 0 0 0"/>
 
                 <StackPanel Grid.Column="1"
                             Orientation="Horizontal"
                             HorizontalAlignment="Right"
-                            Margin="0 0 4 0">
+                            Margin="0 0 8 0">
 
                     <Button Padding="0 0 0 2"
                             Content="—"

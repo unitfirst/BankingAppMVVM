@@ -183,19 +183,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="MVVM\View\AboutView.xaml">
+    <Page Include="MVVM\View\MainWindow\Views\AboutView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MVVM\View\AccountsView.xaml">
+    <Page Include="MVVM\View\MainWindow\Views\AccountsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MVVM\View\NewAccountView.xaml">
+    <Page Include="MVVM\View\MainWindow\Views\NewAccountView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MVVM\View\MainWindow.xaml">
+    <Page Include="MVVM\View\MainWindow\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -210,9 +210,9 @@
     <Compile Include="Core\Commands\Toolbar\ShutDownCommand.cs" />
     <Compile Include="Core\Extensions.cs" />
     <Compile Include="Data\Repository.cs" />
-    <Compile Include="MVVM\Model\Consultant.cs" />
-    <Compile Include="MVVM\Model\Employee.cs" />
-    <Compile Include="MVVM\Model\Manager.cs" />
+    <Compile Include="MVVM\Model\Employee\Consultant.cs" />
+    <Compile Include="MVVM\Model\Employee\Employee.cs" />
+    <Compile Include="MVVM\Model\Employee\Manager.cs" />
     <Compile Include="MVVM\ViewModel\Base\ViewModelBase.cs" />
     <Compile Include="Core\Commands\Base\Command.cs" />
     <Compile Include="MVVM\ViewModel\AboutViewModel.cs" />
@@ -220,21 +220,21 @@
     <Compile Include="MVVM\ViewModel\NewAccountViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
     <Compile Include="MVVM\ViewModel\SettingsViewModel.cs" />
-    <Compile Include="MVVM\View\AboutView.xaml.cs">
+    <Compile Include="MVVM\View\MainWindow\Views\AboutView.xaml.cs">
       <DependentUpon>AboutView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MVVM\Model\Account.cs" />
-    <Compile Include="MVVM\View\AccountsView.xaml.cs">
+    <Compile Include="MVVM\Model\Account\Account.cs" />
+    <Compile Include="MVVM\View\MainWindow\Views\AccountsView.xaml.cs">
       <DependentUpon>AccountsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MVVM\View\NewAccountView.xaml.cs">
+    <Compile Include="MVVM\View\MainWindow\Views\NewAccountView.xaml.cs">
       <DependentUpon>NewAccountView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MVVM\View\MainWindow.xaml.cs">
+    <Compile Include="MVVM\View\MainWindow\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MVVM\View\SettingsView.xaml">
+    <Page Include="MVVM\View\MainWindow\Views\SettingsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -288,7 +288,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MVVM\View\SettingsView.xaml.cs">
+    <Compile Include="MVVM\View\MainWindow\Views\SettingsView.xaml.cs">
       <DependentUpon>SettingsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -318,7 +318,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="MVVM\View\Images\w-hand.gif" />
+    <Folder Include="MVVM\Model\AccessValidator\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MVVM\View\MainWindow\Views\Media\w-hand.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
