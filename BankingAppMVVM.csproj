@@ -208,7 +208,7 @@
     <Compile Include="Core\Commands\Toolbar\MoveWindowCommand.cs" />
     <Compile Include="Core\Commands\RelayCommand.cs" />
     <Compile Include="Core\Commands\Toolbar\ShutDownCommand.cs" />
-    <Compile Include="Core\Extensions.cs" />
+    <Compile Include="Resources\Extensions.cs" />
     <Compile Include="Data\Repository.cs" />
     <Compile Include="MVVM\Model\Employee\Consultant.cs" />
     <Compile Include="MVVM\Model\Employee\Employee.cs" />
