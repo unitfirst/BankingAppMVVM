@@ -8,14 +8,25 @@ namespace BankingAppMVVM.MVVM.View
 {
     public class Account : INotifyPropertyChanged
     {
-        private readonly int _id;
+        #region fields
+
+        private static int staticId;
         private string _firstName;
         private string _lastName;
         private string _phoneNumber;
         private int _passport;
-        
-        public DateTime AddTime { get; set; }
-        public DateTime LastUpdated { get; set; }
+
+
+        #endregion
+
+        #region Properties
+
+        private static int nextId()
+        {
+            return staticId++;
+        }
+        public DateTime AddTime { get; set; } = DateTime.Now;
+        public DateTime LastUpdated { get; set; } = DateTime.Now;
         public int Id { get; set; }
         public string FirstName
         {
@@ -58,9 +69,33 @@ namespace BankingAppMVVM.MVVM.View
                 if (_passport == value) return;
 
                 _passport = value;
-                OnPropertyChanged(Passport.ToString());
+                OnPropertyChanged(Passport);
             }
         }
+
+        #endregion
+
+        #region Declare
+        static Account()
+        {
+            staticId = 0;
+        }
+
+        public Account(DateTime addTime, DateTime lastUpdated, int id, string firstName, string secondName, string lastName, string phoneNumber, int passport, bool isNew)
+        {
+            AddTime = addTime;
+            LastUpdated = lastUpdated;
+            Id = Account.nextId();
+            FirstName = firstName;
+            LastName = secondName;
+            LastName = lastName;
+            PhoneNumber = phoneNumber;
+            Passport = passport;
+        }
+
+        #endregion
+
+        #region OnPropertyChanged
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -68,5 +103,7 @@ namespace BankingAppMVVM.MVVM.View
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        #endregion
     }
 }
