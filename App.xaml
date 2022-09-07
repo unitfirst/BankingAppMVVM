@@ -8,19 +8,19 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Theme/ColorStyle.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/TitleBarButton.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/Title.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/SubTitle.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/MenuButton.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/DataGrid.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/Button.Default.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/Button.Delete.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/ScrollBar.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/TextBox.Default.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/TextBox.Search.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/ResizeGrip.Nord.xaml"/>
-                <ResourceDictionary Source="Assets/Icons.xaml"/>
+                <ResourceDictionary Source="Theme/Nord/ColorStyle.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/Nord/TitleBarButton.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/Nord/Title.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/Nord/SubTitle.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/Nord/MenuButton.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/Nord/DataGrid.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/Nord/Button.Default.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/Nord/Button.Delete.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/Nord/ScrollBar.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/Nord/TextBox.Default.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/Nord/TextBox.Search.Nord.xaml"/>
+                <ResourceDictionary Source="Theme/Nord/ResizeGrip.Nord.xaml"/>
+                <ResourceDictionary Source="Resources/Icons.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
             <DataTemplate DataType="{x:Type vms:SettingsViewModel}">

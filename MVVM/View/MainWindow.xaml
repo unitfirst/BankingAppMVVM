@@ -22,6 +22,13 @@
         <viewmodel:MainViewModel/>
     </Window.DataContext>
 
+    <Window.Resources>
+        <cmd:MinimizeWindowCommand x:Key="MinimizeWindowCommand"/>
+        <cmd:MaximizeWindowCommand x:Key="MaximizeWindowCommand"/>
+        <cmd:ShutDownCommand x:Key="ShutDownCommand"/>
+        <cmd:MoveWindowCommand x:Key="MoveWindowCommand"/>
+    </Window.Resources>
+
     <DockPanel Background="Transparent"
                Margin="0">
         <Border Height="30"
@@ -30,11 +37,8 @@
                 CornerRadius="10 10 0 0">
 
             <Border.InputBindings>
-                <MouseBinding MouseAction="LeftClick">
-                    <MouseBinding.Command>
-                        <cmd:MoveWindowCommand/>
-                    </MouseBinding.Command>
-                </MouseBinding>
+                <MouseBinding MouseAction="LeftClick"
+                              Command="{StaticResource MoveWindowCommand}"/>
             </Border.InputBindings>
 
             <Grid>
@@ -47,8 +51,8 @@
                            Foreground="LightGray"
                            FontFamily="Montserrat"
                            VerticalAlignment="Center"
-                           HorizontalAlignment="Center"
-                           Margin="100 0 0 0"/>
+                           HorizontalAlignment="Left"
+                           Margin="10 0 0 0"/>
 
                 <StackPanel Grid.Column="1"
                             Orientation="Horizontal"
@@ -56,25 +60,16 @@
                             Margin="0 0 4 0">
 
                     <Button Padding="0 0 0 2"
-                            Content="—">
-                        <Button.Command>
-                            <cmd:MinimizeWindowCommand/>
-                        </Button.Command>
-                    </Button>
+                            Content="—"
+                            Command="{StaticResource MinimizeWindowCommand}"/>
 
                     <Button Padding="0 0 0 3"
-                            Content="🗖">
-                        <Button.Command>
-                            <cmd:MaximizeWindowCommand/>
-                        </Button.Command>
-                    </Button>
+                            Content="🗖"
+                            Command="{StaticResource MaximizeWindowCommand}"/>
 
                     <Button Padding="0 0 0 2"
-                            Content="✕">
-                        <Button.Command>
-                            <cmd:ShutDownCommand/>
-                        </Button.Command>
-                    </Button>
+                            Content="✕"
+                            Command="{StaticResource ShutDownCommand}"/>
                 </StackPanel>
 
             </Grid>
@@ -127,7 +122,8 @@
                 <RadioButton Command="{Binding ShowAccountsView}"
                              Content="Accounts"
                              extensions:Extensions.Icon="📖"
-                             IsChecked="True"/>
+                             IsChecked="True">
+                </RadioButton>
 
                 <RadioButton Command="{Binding ShowNewAccountView}"
                              Content="New account"
