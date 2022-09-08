@@ -3,7 +3,7 @@ using BankingAppMVVM.MVVM.Model.Accounts;
 
 namespace BankingAppMVVM.MVVM.Model.Employees.Base
 {
-    public class Employee
+    public abstract class Employee
     {
         public AccessValidator DataAccess { get; protected set; }
 
