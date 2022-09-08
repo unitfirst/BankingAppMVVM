@@ -29,7 +29,7 @@ namespace BankingAppMVVM.MVVM.Model.Accounts
         #region Declare
         static Account()
         {
-            staticId = 0;
+            staticId = 1;
         }
 
         public Account() { }
