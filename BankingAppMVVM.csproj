@@ -216,9 +216,9 @@
     <Compile Include="MVVM\Model\Accounts\Base\Person.cs" />
     <Compile Include="MVVM\Model\Accounts\ProtectedData\Passport.cs" />
     <Compile Include="MVVM\Model\Accounts\ProtectedData\PhoneNumber.cs" />
-    <Compile Include="MVVM\Model\Employee\Base\Employee.cs" />
-    <Compile Include="MVVM\Model\Employee\Consultant.cs" />
-    <Compile Include="MVVM\Model\Employee\Manager.cs" />
+    <Compile Include="MVVM\Model\Employees\Base\Employee.cs" />
+    <Compile Include="MVVM\Model\Employees\Consultant.cs" />
+    <Compile Include="MVVM\Model\Employees\Manager.cs" />
     <Compile Include="Resources\Extensions.cs" />
     <Compile Include="Data\Repository.cs" />
     <Compile Include="MVVM\ViewModel\Base\ViewModelBase.cs" />

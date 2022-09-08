@@ -1,5 +1,6 @@
 ﻿using BankingAppMVVM.Core;
 using BankingAppMVVM.MVVM.Model.Accounts;
+using BankingAppMVVM.MVVM.Model.Accounts.ProtectedData;
 using BankingAppMVVM.ViewModel.Base;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
@@ -66,7 +67,7 @@ namespace BankingAppMVVM.MVVM.ViewModel
         {
             Accounts = new ObservableCollection<Account>
             {
-                new Account() { FirstName = "Hideo", LastName = "Kodzima", PhoneNumber = "+79990003938", Passport = 00998772234 },
+                new Account() { FirstName = "Hideo", LastName = "Kodzima", PhoneNumber = new PhoneNumber("+791012345"), Passport = new Passport(00998772234) },
             };
         }
     }

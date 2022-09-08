@@ -1,7 +1,7 @@
 ﻿using BankingAppMVVM.MVVM.Model.Access;
 using BankingAppMVVM.MVVM.Model.Accounts;
 
-namespace BankingAppMVVM.MVVM.Model.Employee.Base
+namespace BankingAppMVVM.MVVM.Model.Employees.Base
 {
     public class Employee
     {
