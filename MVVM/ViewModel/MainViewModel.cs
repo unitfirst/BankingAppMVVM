@@ -1,5 +1,5 @@
-﻿using BankingAppMVVM.Core;
-using BankingAppMVVM.Core.Commands;
+﻿using BankingAppMVVM.Core.Commands;
+using BankingAppMVVM.ViewModel.Base;
 using System.Windows.Input;
 
 namespace BankingAppMVVM.MVVM.ViewModel
