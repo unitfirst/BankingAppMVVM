@@ -7,18 +7,18 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Theme/Nord/ColorStyle.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/Nord/TitleBarButton.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/Nord/Title.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/Nord/SubTitle.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/Nord/MenuButton.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/Nord/DataGrid.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/Nord/Button.Default.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/Nord/Button.Delete.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/Nord/ScrollBar.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/Nord/TextBox.Default.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/Nord/TextBox.Search.Nord.xaml"/>
-                <ResourceDictionary Source="Theme/Nord/ResizeGrip.Nord.xaml"/>
+                <ResourceDictionary Source="Themes/Nord/ColorStyle.Nord.xaml"/>
+                <ResourceDictionary Source="Themes/Nord/TitleBarButton.Nord.xaml"/>
+                <ResourceDictionary Source="Themes/Nord/Title.Nord.xaml"/>
+                <ResourceDictionary Source="Themes/Nord/SubTitle.Nord.xaml"/>
+                <ResourceDictionary Source="Themes/Nord/MenuButton.Nord.xaml"/>
+                <ResourceDictionary Source="Themes/Nord/DataGrid.Nord.xaml"/>
+                <ResourceDictionary Source="Themes/Nord/Button.Default.Nord.xaml"/>
+                <ResourceDictionary Source="Themes/Nord/Button.Delete.Nord.xaml"/>
+                <ResourceDictionary Source="Themes/Nord/ScrollBar.Nord.xaml"/>
+                <ResourceDictionary Source="Themes/Nord/TextBox.Default.Nord.xaml"/>
+                <ResourceDictionary Source="Themes/Nord/TextBox.Search.Nord.xaml"/>
+                <ResourceDictionary Source="Themes/Nord/ResizeGrip.Nord.xaml"/>
                 <ResourceDictionary Source="Resources/Icons.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
