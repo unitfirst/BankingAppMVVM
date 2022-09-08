@@ -1,9 +1,10 @@
-﻿using System.ComponentModel;
+﻿using BankingAppMVVM.ViewModel.Base;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace BankingAppMVVM.MVVM.Model.Account.Base
+namespace BankingAppMVVM.MVVM.Model.Accounts.Base
 {
-    public class Person: INotifyPropertyChanged
+    public class Person : ViewModelBase
     {
         #region Fields
 
@@ -45,8 +46,8 @@ namespace BankingAppMVVM.MVVM.Model.Account.Base
         public Person() { }
         public Person(string firstName, string lastName)
         {
-            FirstName = _firstName;
-            LastName = _lastName;
+            FirstName = firstName;
+            LastName = lastName;
         }
 
         #endregion

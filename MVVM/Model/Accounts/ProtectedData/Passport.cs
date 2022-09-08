@@ -1,11 +1,6 @@
-﻿using BankingAppMVVM.Core;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BankingAppMVVM.ViewModel.Base;
 
-namespace BankingAppMVVM.MVVM.Model.Account
+namespace BankingAppMVVM.MVVM.Model.Accounts.ProtectedData
 {
     public class Passport : ViewModelBase
     {

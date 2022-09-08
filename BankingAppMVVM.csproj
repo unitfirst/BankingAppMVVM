@@ -208,14 +208,19 @@
     <Compile Include="Core\Commands\Toolbar\MoveWindowCommand.cs" />
     <Compile Include="Core\Commands\RelayCommand.cs" />
     <Compile Include="Core\Commands\Toolbar\ShutDownCommand.cs" />
-    <Compile Include="MVVM\Model\Account\Base\Person.cs" />
-    <Compile Include="MVVM\Model\Account\Passport.cs" />
-    <Compile Include="MVVM\Model\Account\PhoneNumber.cs" />
+    <Compile Include="MVVM\Model\Access\AccessValidator.cs" />
+    <Compile Include="MVVM\Model\Access\Parameters\CommandAccess.cs" />
+    <Compile Include="MVVM\Model\Access\Parameters\EditAccess.cs" />
+    <Compile Include="MVVM\Model\Accounts\Account.cs" />
+    <Compile Include="MVVM\Model\Accounts\AccountInfo.cs" />
+    <Compile Include="MVVM\Model\Accounts\Base\Person.cs" />
+    <Compile Include="MVVM\Model\Accounts\ProtectedData\Passport.cs" />
+    <Compile Include="MVVM\Model\Accounts\ProtectedData\PhoneNumber.cs" />
+    <Compile Include="MVVM\Model\Employee\Base\Employee.cs" />
+    <Compile Include="MVVM\Model\Employee\Consultant.cs" />
+    <Compile Include="MVVM\Model\Employee\Manager.cs" />
     <Compile Include="Resources\Extensions.cs" />
     <Compile Include="Data\Repository.cs" />
-    <Compile Include="MVVM\Model\Employee\Consultant.cs" />
-    <Compile Include="MVVM\Model\Employee\Employee.cs" />
-    <Compile Include="MVVM\Model\Employee\Manager.cs" />
     <Compile Include="MVVM\ViewModel\Base\ViewModelBase.cs" />
     <Compile Include="Core\Commands\Base\Command.cs" />
     <Compile Include="MVVM\ViewModel\AboutViewModel.cs" />
@@ -226,7 +231,6 @@
     <Compile Include="MVVM\View\MainWindow\Views\AboutView.xaml.cs">
       <DependentUpon>AboutView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MVVM\Model\Account\Account.cs" />
     <Compile Include="MVVM\View\MainWindow\Views\AccountsView.xaml.cs">
       <DependentUpon>AccountsView.xaml</DependentUpon>
     </Compile>
@@ -241,51 +245,51 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Theme\Nord\Button.Default.Nord.xaml">
+    <Page Include="Themes\Nord\Button.Default.Nord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Theme\Nord\ColorStyle.Nord.xaml">
+    <Page Include="Themes\Nord\ColorStyle.Nord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Theme\Nord\DataGrid.Nord.xaml">
+    <Page Include="Themes\Nord\DataGrid.Nord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Theme\Nord\Button.Delete.Nord.xaml">
+    <Page Include="Themes\Nord\Button.Delete.Nord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Theme\Nord\MenuButton.Nord.xaml">
+    <Page Include="Themes\Nord\MenuButton.Nord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Theme\Nord\ResizeGrip.Nord.xaml">
+    <Page Include="Themes\Nord\ResizeGrip.Nord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Theme\Nord\ScrollBar.Nord.xaml">
+    <Page Include="Themes\Nord\ScrollBar.Nord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Theme\Nord\SubTitle.Nord.xaml">
+    <Page Include="Themes\Nord\SubTitle.Nord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Theme\Nord\TextBox.Search.Nord.xaml">
+    <Page Include="Themes\Nord\TextBox.Search.Nord.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Theme\Nord\TextBox.Default.Nord.xaml">
+    <Page Include="Themes\Nord\TextBox.Default.Nord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Theme\Nord\Title.Nord.xaml">
+    <Page Include="Themes\Nord\Title.Nord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Theme\Nord\TitleBarButton.Nord.xaml">
+    <Page Include="Themes\Nord\TitleBarButton.Nord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -320,9 +324,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MVVM\Model\AccessValidator\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="MVVM\View\MainWindow\Views\Media\w-hand.gif" />
   </ItemGroup>

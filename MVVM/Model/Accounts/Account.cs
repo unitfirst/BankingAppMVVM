@@ -1,17 +1,14 @@
-﻿using BankingAppMVVM.MVVM.Model.Account;
-using BankingAppMVVM.MVVM.Model.Account.Base;
+﻿using BankingAppMVVM.MVVM.Model.Accounts.Base;
+using BankingAppMVVM.MVVM.Model.Accounts.ProtectedData;
 using System;
 
-namespace BankingAppMVVM.MVVM.View
+namespace BankingAppMVVM.MVVM.Model.Accounts
 {
     public class Account : Person
     {
         #region fields
 
         private static int staticId;
-        private string _phoneNumber;
-        private int _passport;
-
         private static int nextId()
         {
             return staticId++;
@@ -37,7 +34,7 @@ namespace BankingAppMVVM.MVVM.View
 
         public Account() { }
 
-        public Account(PhoneNumber phoneNumber, Passport passport, string firstName, string lastName)
+        public Account(string firstName, string lastName, PhoneNumber phoneNumber, Passport passport)
             : base(firstName, lastName)
         {
             PhoneNumber = phoneNumber;

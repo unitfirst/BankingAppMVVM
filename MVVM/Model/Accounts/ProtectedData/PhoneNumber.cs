@@ -1,12 +1,8 @@
-﻿using BankingAppMVVM.Core;
+﻿using BankingAppMVVM.ViewModel.Base;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
-namespace BankingAppMVVM.MVVM.Model.Account
+namespace BankingAppMVVM.MVVM.Model.Accounts.ProtectedData
 {
     public class PhoneNumber : ViewModelBase
     {
