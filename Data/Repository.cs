@@ -1,4 +1,5 @@
-﻿using BankingAppMVVM.MVVM.View;
+﻿using BankingAppMVVM.MVVM.Model.Accounts;
+using BankingAppMVVM.MVVM.View;
 using Newtonsoft.Json;
 using System;
 using System.Collections;
