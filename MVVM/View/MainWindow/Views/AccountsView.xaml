@@ -157,8 +157,8 @@
                                 Style="{StaticResource Button.Default.Style}" 
                                 Content="Apply"
                                 Command="{Binding ApplyCommand}"
-                                CommandParameter="{Binding SelectedAccount}">
-                        </Button>
+                                CommandParameter="{Binding SelectedAccount}"/>
+
 
                         <Button x:Name="DeleteButton" 
                                 Style="{StaticResource Button.Delete.Style}"

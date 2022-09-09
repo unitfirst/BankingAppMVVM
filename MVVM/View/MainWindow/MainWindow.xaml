@@ -172,6 +172,6 @@
                 Background="{StaticResource Color.Main.Onyx.Light}"/>
 
         <ContentPresenter Margin="0 -1 0 0" 
-                            Content="{Binding CurrentView}"/>
+                          Content="{Binding CurrentView}"/>
     </DockPanel>
 </Window>

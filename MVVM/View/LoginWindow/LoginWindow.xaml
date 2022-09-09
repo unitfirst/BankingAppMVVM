@@ -4,9 +4,88 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BankingAppMVVM.MVVM.View.LoginWindow"
+        xmlns:cmd="clr-namespace:BankingAppMVVM.Core.Commands"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="400" Width="400">
-    <Grid>
-        
-    </Grid>
+        Title="niBank" 
+        Height="400" 
+        Width="400"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        ResizeMode="NoResize">
+
+    <Window.Resources>
+        <cmd:ShutDownCommand x:Key="ShutDownCommand"/>
+        <cmd:MoveWindowCommand x:Key="MoveWindowCommand"/>
+    </Window.Resources>
+    
+    <DockPanel Background="Transparent"
+               Margin="0">
+        <Border Height="40"
+                Background="{StaticResource Color.Main.Onyx.Default}"
+                DockPanel.Dock="Top"
+                CornerRadius="10 10 0 0">
+
+            <Border.InputBindings>
+                <MouseBinding MouseAction="LeftClick"
+                              Command="{StaticResource MoveWindowCommand}"/>
+            </Border.InputBindings>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="1"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            Margin="0 0 8 0">
+
+                    <Button Padding="0 0 0 2"
+                            Content="✕"
+                            Command="{StaticResource ShutDownCommand}"/>
+                </StackPanel>
+
+            </Grid>
+
+        </Border>
+
+        <Border Height="360"
+                Width="400"
+                Background="{StaticResource Color.Main.Onyx.Dark}"
+                DockPanel.Dock="Top"
+                CornerRadius="0 0 10 10">
+            <StackPanel VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+                <TextBlock Grid.Row="1"
+                           Style="{StaticResource Title.Style}"
+                           FontSize="32"
+                           FontWeight="SemiBold"
+                           Margin="0 0 0 100"
+                           HorizontalAlignment="Center"
+                           Text="Welcome!"/>
+                
+                <TextBlock Style="{StaticResource SubTitle.Style}"
+                           Foreground="{StaticResource Color.Main.Blue.Bright}"
+                           HorizontalAlignment="Center"
+                           Text="Please, select user"/>
+
+                <Button x:Name="ConsultantRole_btn" 
+                                Style="{StaticResource Button.Default.Style}" 
+                                Content="Consultant"/>
+
+                <Button x:Name="ManagerRole_btn" 
+                                Style="{StaticResource Button.Default.Style}" 
+                                Content="Manager"/>
+
+            </StackPanel>
+            
+
+        </Border>
+
+        <ContentPresenter Margin="0 -1 0 0" 
+                            Content="{Binding CurrentView}"/>
+    </DockPanel>
+    
 </Window>
