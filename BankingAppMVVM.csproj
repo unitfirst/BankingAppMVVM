@@ -179,6 +179,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="MVVM\View\LoginWindow\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resources\Icons.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -219,6 +223,10 @@
     <Compile Include="MVVM\Model\Employees\Base\Employee.cs" />
     <Compile Include="MVVM\Model\Employees\Consultant.cs" />
     <Compile Include="MVVM\Model\Employees\Manager.cs" />
+    <Compile Include="MVVM\ViewModel\LoginViewModel.cs" />
+    <Compile Include="MVVM\View\LoginWindow\LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Resources\Extensions.cs" />
     <Compile Include="Data\Repository.cs" />
     <Compile Include="MVVM\ViewModel\Base\ViewModelBase.cs" />

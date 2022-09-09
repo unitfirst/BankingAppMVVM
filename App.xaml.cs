@@ -1,10 +1,5 @@
-﻿using BankingAppMVVM.MVVM.ViewModel;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using BankingAppMVVM.MVVM.View.LoginWindow;
+using BankingAppMVVM.MVVM.ViewModel;
 using System.Windows;
 
 namespace BankingAppMVVM
@@ -17,7 +12,7 @@ namespace BankingAppMVVM
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            new MainWindow { DataContext = new MainViewModel() }.Show();
+            new LoginWindow { DataContext = new LoginViewModel() }.Show();
         }
     }
 }
