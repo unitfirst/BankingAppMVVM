@@ -2,7 +2,7 @@
 
 namespace BankingAppMVVM.Core.Commands
 {
-    internal class MaximizeWindowCommand : Command
+    public class MaximizeWindowCommand : Command
     {
         public override bool CanExecute(object parameter) => true;
 

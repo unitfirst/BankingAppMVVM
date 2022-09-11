@@ -29,16 +29,18 @@ namespace BankingAppMVVM.MVVM.ViewModel
 
         private void OpenMainWindow(Employee employee, object p)
         {
-            CloseThisWindow(p);
-
-            MainWindow mainWindow = new MainWindow { DataContext = new MainViewModel(employee) };
+            //MainWindow mainWindow = new MainWindow { DataContext = new MainViewModel(employee) };
+            MainWindow mainWindow = new MainWindow { DataContext = new MainViewModel() };
             mainWindow.Show();
+
+            CloseThisWindow(p);
         }
 
         private void CloseThisWindow(object p)
         {
             if (p is Window window) window.Close();
         }
+
         #endregion
 
         public LoginViewModel()

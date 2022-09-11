@@ -13,6 +13,7 @@ namespace BankingAppMVVM
         {
             base.OnStartup(e);
             new LoginWindow { DataContext = new LoginViewModel() }.Show();
+            //new MainWindow { DataContext = new MainViewModel() }.Show();
         }
     }
 }

@@ -34,7 +34,6 @@ namespace BankingAppMVVM.MVVM.ViewModel
         public SettingsViewModel SettingsVM { get; set; }
         public NewAccountViewModel NewAccountVM { get; set; }
         public AboutViewModel AboutVM { get; set; }
-
         public Account Account { get; set; }
 
         #endregion
@@ -87,8 +86,8 @@ namespace BankingAppMVVM.MVVM.ViewModel
 
         #endregion
 
-        public MainViewModel() {}
-        public MainViewModel(Employee employee)
+
+        public MainViewModel()
         {
             #region Views
 

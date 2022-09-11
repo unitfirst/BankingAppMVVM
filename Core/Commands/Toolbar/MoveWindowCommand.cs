@@ -2,7 +2,7 @@
 
 namespace BankingAppMVVM.Core.Commands
 {
-    internal class MoveWindowCommand : Command
+    public class MoveWindowCommand : Command
     {
         public override bool CanExecute(object parameter) => true;
 
