@@ -1,22 +1,20 @@
-﻿using BankingAppMVVM.Core;
-using System;
-using System.Collections;
+﻿using BankingAppMVVM.ViewModel.Base;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace BankingAppMVVM.MVVM.View
+namespace BankingAppMVVM.MVVM.Model.Accounts.Base
 {
-    public class Account : INotifyPropertyChanged
+    public class Person : ViewModelBase
     {
-        private readonly int _id;
+        #region Fields
+
         private string _firstName;
         private string _lastName;
-        private string _phoneNumber;
-        private int _passport;
-        
-        public DateTime AddTime { get; set; }
-        public DateTime LastUpdated { get; set; }
-        public int Id { get; set; }
+
+        #endregion
+
+        #region Props
+
         public string FirstName
         {
             get => _firstName;
@@ -28,6 +26,7 @@ namespace BankingAppMVVM.MVVM.View
                 OnPropertyChanged(FirstName);
             }
         }
+
         public string LastName
         {
             get => _lastName;
@@ -39,28 +38,21 @@ namespace BankingAppMVVM.MVVM.View
                 OnPropertyChanged(LastName);
             }
         }
-        public string PhoneNumber
-        {
-            get => _phoneNumber;
-            set
-            {
-                if (_phoneNumber == value) return;
 
-                _phoneNumber = value;
-                OnPropertyChanged(PhoneNumber);
-            }
-        }
-        public int Passport
-        {
-            get => _passport;
-            set
-            {
-                if (_passport == value) return;
+        #endregion
 
-                _passport = value;
-                OnPropertyChanged(Passport.ToString());
-            }
+        #region Declare
+
+        public Person() { }
+        public Person(string firstName, string lastName)
+        {
+            FirstName = firstName;
+            LastName = lastName;
         }
+
+        #endregion
+
+        #region OnPropertyChanged
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -68,5 +60,7 @@ namespace BankingAppMVVM.MVVM.View
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        #endregion
     }
 }

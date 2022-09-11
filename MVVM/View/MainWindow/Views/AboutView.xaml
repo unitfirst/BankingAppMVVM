@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:BankingAppMVVM.MVVM.View"
              xmlns:gif="http://wpfanimatedgif.codeplex.com"
              mc:Ignorable="d" 
              d:DesignHeight="450" 
@@ -47,7 +46,7 @@
                    Height="60"
                    VerticalAlignment="Top"
                    HorizontalAlignment="Left"
-                   gif:ImageBehavior.AnimatedSource="Images/w-hand.gif"
+                   gif:ImageBehavior.AnimatedSource="Media/w-hand.gif"
                    gif:ImageBehavior.RepeatBehavior="2x"/>
 
             <StackPanel Grid.Row="2"

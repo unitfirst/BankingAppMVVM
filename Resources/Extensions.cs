@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace BankingAppMVVM.Core
+namespace BankingAppMVVM.Resources
 {
     internal class Extensions
     {

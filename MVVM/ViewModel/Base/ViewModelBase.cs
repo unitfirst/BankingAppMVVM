@@ -2,9 +2,9 @@
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
-namespace BankingAppMVVM.Core
+namespace BankingAppMVVM.ViewModel.Base
 {
-    internal abstract class ViewModelBase : INotifyPropertyChanged
+    public abstract class ViewModelBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
