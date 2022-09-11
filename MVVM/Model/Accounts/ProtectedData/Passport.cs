@@ -1,4 +1,4 @@
-﻿using BankingAppMVVM.ViewModel.Base;
+﻿using BankingAppMVVM.MVVM.ViewModel.Base;
 
 namespace BankingAppMVVM.MVVM.Model.Accounts.ProtectedData
 {

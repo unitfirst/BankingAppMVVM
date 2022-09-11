@@ -1,8 +1,9 @@
 ﻿using System.Windows;
+using BankingAppMVVM.Core.Commands.Base;
 
-namespace BankingAppMVVM.Core.Commands
+namespace BankingAppMVVM.Core.Commands.Toolbar
 {
-    internal class MinimizeWindowCommand : Command
+    public class MinimizeWindowCommand : Command
     {
         public override bool CanExecute(object parameter) => true;
 

@@ -2,9 +2,10 @@
 using BankingAppMVVM.Core.Commands;
 using BankingAppMVVM.MVVM.Model.Accounts;
 using BankingAppMVVM.MVVM.Model.Accounts.ProtectedData;
-using BankingAppMVVM.ViewModel.Base;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
+using BankingAppMVVM.Core.Commands.Base;
+using BankingAppMVVM.MVVM.ViewModel.Base;
 
 namespace BankingAppMVVM.MVVM.ViewModel
 {

@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
-namespace BankingAppMVVM.ViewModel.Base
+namespace BankingAppMVVM.MVVM.ViewModel.Base
 {
     public abstract class ViewModelBase : INotifyPropertyChanged
     {

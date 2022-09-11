@@ -1,8 +1,9 @@
 ﻿using System.Windows;
+using BankingAppMVVM.Core.Commands.Base;
 
-namespace BankingAppMVVM.Core.Commands
+namespace BankingAppMVVM.Core.Commands.Toolbar
 {
-    internal class MaximizeWindowCommand : Command
+    public class MaximizeWindowCommand : Command
     {
         public override bool CanExecute(object parameter) => true;
 

@@ -1,9 +1,10 @@
 ﻿using BankingAppMVVM.Core.Commands;
 using BankingAppMVVM.MVVM.Model.Employees;
 using BankingAppMVVM.MVVM.Model.Employees.Base;
-using BankingAppMVVM.ViewModel.Base;
 using System.Windows;
 using System.Windows.Input;
+using BankingAppMVVM.MVVM.View.LoginWindow;
+using BankingAppMVVM.MVVM.ViewModel.Base;
 
 namespace BankingAppMVVM.MVVM.ViewModel
 {
@@ -29,16 +30,17 @@ namespace BankingAppMVVM.MVVM.ViewModel
 
         private void OpenMainWindow(Employee employee, object p)
         {
-            CloseThisWindow(p);
-
             MainWindow mainWindow = new MainWindow { DataContext = new MainViewModel(employee) };
             mainWindow.Show();
+            
+            CloseThisWindow(p);
         }
 
         private void CloseThisWindow(object p)
         {
             if (p is Window window) window.Close();
         }
+        
         #endregion
 
         public LoginViewModel()

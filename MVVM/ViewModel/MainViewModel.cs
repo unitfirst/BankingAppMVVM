@@ -1,13 +1,13 @@
 ﻿using BankingAppMVVM.Core.Commands;
 using BankingAppMVVM.MVVM.Model.Accounts;
 using BankingAppMVVM.MVVM.Model.Employees.Base;
-using BankingAppMVVM.ViewModel.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using BankingAppMVVM.MVVM.ViewModel.Base;
 
 namespace BankingAppMVVM.MVVM.ViewModel
 {

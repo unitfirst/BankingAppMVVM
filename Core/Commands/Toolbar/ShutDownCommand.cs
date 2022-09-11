@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using BankingAppMVVM.Core.Commands.Base;
 
 namespace BankingAppMVVM.Core.Commands
 {
