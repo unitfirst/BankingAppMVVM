@@ -8,7 +8,7 @@ using System.Windows.Input;
 
 namespace BankingAppMVVM.MVVM.ViewModel
 {
-    internal class AccountsViewModel : ViewModelBase
+    public class AccountsViewModel : ViewModelBase
     {
         private Command _applyCommand;
         private Command _removeCommand;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BankingAppMVVM.MVVM.ViewModel
 {
-    internal class AboutViewModel
+    public class AboutViewModel
     {
     }
 }

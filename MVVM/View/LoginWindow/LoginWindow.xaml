@@ -4,15 +4,19 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BankingAppMVVM.MVVM.View.LoginWindow"
+        xmlns:viewmodel="clr-namespace:BankingAppMVVM.MVVM.ViewModel"
         xmlns:cmd="clr-namespace:BankingAppMVVM.Core.Commands"
         mc:Ignorable="d"
-        Title="niBank" 
         Height="400" 
         Width="400"
         WindowStyle="None"
         Background="Transparent"
         AllowsTransparency="True"
         ResizeMode="NoResize">
+
+    <Window.DataContext>
+        <viewmodel:LoginViewModel/>
+    </Window.DataContext>
 
     <Window.Resources>
         <cmd:ShutDownCommand x:Key="ShutDownCommand"/>
@@ -46,9 +50,7 @@
                             Content="✕"
                             Command="{StaticResource ShutDownCommand}"/>
                 </StackPanel>
-
             </Grid>
-
         </Border>
 
         <Border Height="360"
@@ -62,28 +64,24 @@
                            Style="{StaticResource Title.Style}"
                            Margin="0 0 0 100"
                            HorizontalAlignment="Center"
-                           Text="Welcome!"/>
-                
+                           Text="Get started."/>
+
                 <TextBlock Style="{StaticResource SubTitle.Style}"
                            Foreground="{StaticResource Color.Main.Blue.Bright}"
                            HorizontalAlignment="Center"
                            Text="Please, select user"/>
 
-                <Button x:Name="ConsultantRole_btn" 
-                                Style="{StaticResource Button.Default.Style}" 
-                                Content="Consultant"/>
+                <Button Style="{StaticResource Button.Default.Style}" 
+                        Command="{Binding LoginAsConsultantCommand}"
+                        CommandParameter="{Binding ElementName=LoginWindow}"
+                        Content="Consultant"/>
 
-                <Button x:Name="ManagerRole_btn" 
-                                Style="{StaticResource Button.Default.Style}" 
-                                Content="Manager"/>
-
+                <Button Style="{StaticResource Button.Default.Style}" 
+                        Command="{Binding LoginAsManagerCommand}"
+                        CommandParameter="{Binding ElementName=LoginWindow}"
+                        Content="Manager"/>
             </StackPanel>
-            
-
         </Border>
-
-        <ContentPresenter Margin="0 -1 0 0" 
-                            Content="{Binding CurrentView}"/>
     </DockPanel>
     
 </Window>

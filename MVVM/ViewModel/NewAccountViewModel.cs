@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BankingAppMVVM.MVVM.ViewModel
 {
-    internal class NewAccountViewModel
+    public class NewAccountViewModel
     {
     }
 }
