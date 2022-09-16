@@ -30,11 +30,12 @@ namespace BankingAppMVVM.MVVM.ViewModel
 
         private void OpenMainWindow(Employee employee, object p)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.DataContext = new MainViewModel(employee);
+            var mainWindow = new MainWindow
+            {
+                DataContext = new MainViewModel(employee)
+            };
             mainWindow.Show();
-
-            //Application.Current.MainWindow = mainWindow;
+            
             CloseThisWindow(p);
         }
 

@@ -25,17 +25,19 @@ namespace BankingAppMVVM.MVVM.ViewModel
                 OnPropertyChanged();
             }
         }
-        public Employee Employee { get; private set; }
+
 
         #endregion
 
         #region View fields
 
-        public AccountsViewModel AccountsVM { get; set; }
-        public SettingsViewModel SettingsVM { get; set; }
-        public NewAccountViewModel NewAccountVM { get; set; }
-        public AboutViewModel AboutVM { get; set; }
+        private AccountsViewModel AccountsVm { get; set; }
+        private SettingsViewModel SettingsVm { get; set; }
+        private NewAccountViewModel NewAccountVm { get; set; }
+        private AboutViewModel AboutVm { get; set; }
         public Account Account { get; set; }
+        public Employee Employee { get; set; }
+
 
         #endregion
 
@@ -47,7 +49,7 @@ namespace BankingAppMVVM.MVVM.ViewModel
         private bool CanShowAccountsViewExecute(object p) => true;
         private void OnShowAccountsViewExecuted(object p)
         {
-            CurrentView = AccountsVM;
+            CurrentView = AccountsVm;
         }
 
         #endregion
@@ -58,7 +60,7 @@ namespace BankingAppMVVM.MVVM.ViewModel
         private bool CanShowSettingsViewExecute(object p) => true;
         private void OnShowSettingsViewExecuted(object p)
         {
-            CurrentView = SettingsVM;
+            CurrentView = SettingsVm;
         }
 
         #endregion
@@ -69,7 +71,7 @@ namespace BankingAppMVVM.MVVM.ViewModel
         private bool CanShowNewAccountViewExecute(object p) => true;
         private void OnShowNewAccountViewExecuted(object p)
         {
-            CurrentView = NewAccountVM;
+            CurrentView = NewAccountVm;
         }
 
         #endregion
@@ -80,7 +82,7 @@ namespace BankingAppMVVM.MVVM.ViewModel
         private bool CanShowAboutViewExecute(object p) => true;
         private void OnShowAboutViewExecuted(object p)
         {
-            CurrentView = AboutVM;
+            CurrentView = AboutVm;
         }
 
         #endregion
@@ -92,12 +94,12 @@ namespace BankingAppMVVM.MVVM.ViewModel
         {
             #region Views
 
-            AccountsVM = new AccountsViewModel();
-            NewAccountVM = new NewAccountViewModel();
-            SettingsVM = new SettingsViewModel();
-            AboutVM = new AboutViewModel();
+            AccountsVm = new AccountsViewModel();
+            NewAccountVm = new NewAccountViewModel();
+            SettingsVm = new SettingsViewModel();
+            AboutVm = new AboutViewModel();
 
-            CurrentView = AccountsVM;
+            CurrentView = AccountsVm;
             Employee = employee;
 
             #endregion

@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace BankingAppMVVM.MVVM.View.LoginWindow
 {
-    /// <summary>
-    /// Логика взаимодействия для LoginWindow.xaml
-    /// </summary>
     public partial class LoginWindow : Window
     {
         public LoginWindow()
