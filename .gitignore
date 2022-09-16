@@ -363,4 +363,6 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # User Template
+.idea
 .idea/.idea.BankingAppMVVM
+.idea/.idea.BankingAppMVVM/.idea
