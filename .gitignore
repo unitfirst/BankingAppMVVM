@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# User template
+.idea
+packages.config
+BankingAppMVVM.sln
+App.config
