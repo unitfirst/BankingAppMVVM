@@ -4,11 +4,9 @@
     <projectFile>BankingAppMVVM.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be89389b-249b-4e74-b6ab-84ba33ee1019" name="Changes" comment="">
+    <list default="true" id="be89389b-249b-4e74-b6ab-84ba33ee1019" name="Changes" comment="-fix commands">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingAppMVVM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingAppMVVM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BankingAppMVVM.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BankingAppMVVM.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Commands/Toolbar/MaximizeWindowCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Commands/Toolbar/MaximizeWindowCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVVM/Model/Accounts/Base/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVVM/Model/Accounts/Base/Person.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,15 +29,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="BankingAppMVVM" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -71,7 +69,7 @@
       <workItem from="1662927182172" duration="3098000" />
       <workItem from="1663327844676" duration="102000" />
       <workItem from="1663337099597" duration="298000" />
-      <workItem from="1663338016813" duration="818000" />
+      <workItem from="1663338016813" duration="1072000" />
     </task>
     <task id="LOCAL-00001" summary="-reformat code">
       <created>1662929064506</created>
@@ -87,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662929371994</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="-fix commands">
+      <created>1663338945767</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663338945767</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,7 +115,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="-reformat code" />
     <MESSAGE value="-update files" />
-    <option name="LAST_COMMIT_MESSAGE" value="-update files" />
+    <MESSAGE value="-fix commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="-fix commands" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
