@@ -4,16 +4,16 @@
     <projectFile>BankingAppMVVM.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be89389b-249b-4e74-b6ab-84ba33ee1019" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingAppMVVM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingAppMVVM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BankingAppMVVM.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BankingAppMVVM.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Commands/Toolbar/MaximizeWindowCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Commands/Toolbar/MaximizeWindowCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVVM/Model/Accounts/Base/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVVM/Model/Accounts/Base/Person.cs" afterDir="false" />
+    <list default="true" id="be89389b-249b-4e74-b6ab-84ba33ee1019" name="Changes" comment="-fix conflicts">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="dev" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -87,7 +87,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662929371994</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="-fix conflicts">
+      <created>1663345795402</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663345795402</updated>
+    </task>
+    <task id="LOCAL-00004" summary="-fix conflicts">
+      <created>1663345835839</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663345835839</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,7 +124,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="-reformat code" />
     <MESSAGE value="-update files" />
-    <option name="LAST_COMMIT_MESSAGE" value="-update files" />
+    <MESSAGE value="-fix conflicts" />
+    <option name="LAST_COMMIT_MESSAGE" value="-fix conflicts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
