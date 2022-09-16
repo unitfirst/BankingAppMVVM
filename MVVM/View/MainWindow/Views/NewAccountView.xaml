@@ -27,27 +27,19 @@
 
             <TextBlock Style="{StaticResource SubTitle.Style}"
                        Text="First name"/>
-            <TextBox Style="{StaticResource TextBox.Default.Style}" 
-                     x:Name="tbFirstName"
-                     Text="{Binding SelectedAccount.FirstName, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>
+            <TextBox Style="{StaticResource TextBox.Default.Style}"/>
 
             <TextBlock Style="{StaticResource SubTitle.Style}" 
                        Text="Last name"/>
-            <TextBox Style="{StaticResource TextBox.Default.Style}"
-                     x:Name="tbLastName"
-                     Text="{Binding SelectedAccount.LastName, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>
+            <TextBox Style="{StaticResource TextBox.Default.Style}"/>
 
             <TextBlock Style="{StaticResource SubTitle.Style}"
                        Text="Phone number"/>
-            <TextBox Style="{StaticResource TextBox.Default.Style}"
-                     x:Name="tbPhoneNumber"
-                     Text="{Binding SelectedAccount.PhoneNumber, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>
+            <TextBox Style="{StaticResource TextBox.Default.Style}"/>
 
             <TextBlock Style="{StaticResource SubTitle.Style}"
                        Text="Passport"/>
-            <TextBox Style="{StaticResource TextBox.Default.Style}"
-                     x:Name="tbPassport"
-                     Text="{Binding SelectedAccount.Passport, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>
+            <TextBox Style="{StaticResource TextBox.Default.Style}"/>
 
             <StackPanel Orientation="Horizontal"
                         VerticalAlignment="Bottom"

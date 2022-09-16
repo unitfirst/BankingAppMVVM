@@ -224,6 +224,7 @@
     <Compile Include="MVVM\Model\Employees\Consultant.cs" />
     <Compile Include="MVVM\Model\Employees\Manager.cs" />
     <Compile Include="MVVM\ViewModel\LoginViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
     <Compile Include="MVVM\View\LoginWindow\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
@@ -234,7 +235,6 @@
     <Compile Include="MVVM\ViewModel\AboutViewModel.cs" />
     <Compile Include="MVVM\ViewModel\AccountsViewModel.cs" />
     <Compile Include="MVVM\ViewModel\NewAccountViewModel.cs" />
-    <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
     <Compile Include="MVVM\ViewModel\SettingsViewModel.cs" />
     <Compile Include="MVVM\View\MainWindow\Views\AboutView.xaml.cs">
       <DependentUpon>AboutView.xaml</DependentUpon>
