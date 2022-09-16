@@ -4,7 +4,12 @@
     <projectFile>BankingAppMVVM.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be89389b-249b-4e74-b6ab-84ba33ee1019" name="Changes" comment="-fix .gitignore" />
+    <list default="true" id="be89389b-249b-4e74-b6ab-84ba33ee1019" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingAppMVVM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingAppMVVM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BankingAppMVVM.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BankingAppMVVM.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Commands/Toolbar/MaximizeWindowCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Commands/Toolbar/MaximizeWindowCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVVM/Model/Accounts/Base/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MVVM/Model/Accounts/Base/Person.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +18,9 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -32,7 +36,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -67,9 +71,7 @@
       <workItem from="1662927182172" duration="3098000" />
       <workItem from="1663327844676" duration="102000" />
       <workItem from="1663337099597" duration="298000" />
-      <workItem from="1663338016813" duration="1614000" />
-      <workItem from="1663339844797" duration="2663000" />
-      <workItem from="1663342821319" duration="2613000" />
+      <workItem from="1663338016813" duration="818000" />
     </task>
     <task id="LOCAL-00001" summary="-reformat code">
       <created>1662929064506</created>
@@ -85,77 +87,7 @@
       <option name="project" value="LOCAL" />
       <updated>1662929371994</updated>
     </task>
-    <task id="LOCAL-00003" summary="-fix commands">
-      <created>1663338945767</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1663338945767</updated>
-    </task>
-    <task id="LOCAL-00004" summary="-add .gitignore">
-      <created>1663339188426</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1663339188426</updated>
-    </task>
-    <task id="LOCAL-00005" summary="-update packages.config">
-      <created>1663339310434</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1663339310434</updated>
-    </task>
-    <task id="LOCAL-00006" summary="-change VM's to public">
-      <created>1663341974873</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1663341974905</updated>
-    </task>
-    <task id="LOCAL-00007" summary="-some refactor">
-      <created>1663342015874</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1663342015874</updated>
-    </task>
-    <task id="LOCAL-00008" summary="-fix type of user in MainWindow after log in">
-      <created>1663344738563</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1663344738563</updated>
-    </task>
-    <task id="LOCAL-00009" summary="-update workspace.xml">
-      <created>1663344861132</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1663344861132</updated>
-    </task>
-    <task id="LOCAL-00010" summary="-add .gitignore">
-      <created>1663344927438</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1663344927438</updated>
-    </task>
-    <task id="LOCAL-00011" summary="-fix visible">
-      <created>1663345249354</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1663345249354</updated>
-    </task>
-    <task id="LOCAL-00012" summary="-fix .gitignore">
-      <created>1663345300509</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1663345300509</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,17 +110,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="-reformat code" />
     <MESSAGE value="-update files" />
-    <MESSAGE value="-fix commands" />
-    <MESSAGE value="-update packages.config" />
-    <MESSAGE value="-change VM's to public" />
-    <MESSAGE value="-change V" />
-    <MESSAGE value="-some refactor" />
-    <MESSAGE value="-fix type of user in MainWindow after log in" />
-    <MESSAGE value="-update workspace.xml" />
-    <MESSAGE value="-add .gitignore" />
-    <MESSAGE value="-fix visible" />
-    <MESSAGE value="-fix .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="-fix .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="-update files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -201,9 +123,5 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
