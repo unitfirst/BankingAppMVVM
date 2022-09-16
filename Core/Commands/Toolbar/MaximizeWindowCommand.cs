@@ -7,12 +7,12 @@ namespace BankingAppMVVM.Core.Commands.Toolbar
     {
         public override bool CanExecute(object parameter) => true;
 
-        public override void Execute(object parameter) 
+        public override void Execute(object parameter)
         {
-            if (Application.Current.MainWindow.WindowState == WindowState.Maximized)
-                Application.Current.MainWindow.WindowState = WindowState.Normal;
-            else
-                Application.Current.MainWindow.WindowState = WindowState.Maximized;
+            foreach (var item in Application.Current.Windows)
+            {
+                ((Window)item).WindowState = ((Window)item).WindowState == WindowState.Maximized ? WindowState.Normal : WindowState.Maximized;
+            }
         }
     }
 }
