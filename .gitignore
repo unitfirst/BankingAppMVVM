@@ -369,3 +369,11 @@ FodyWeavers.xsd### Example user template template
 out
 gen
 .gitattributes
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
