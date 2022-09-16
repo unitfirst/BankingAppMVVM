@@ -1,6 +1,6 @@
-﻿using BankingAppMVVM.ViewModel.Base;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using BankingAppMVVM.MVVM.ViewModel.Base;
 
 namespace BankingAppMVVM.MVVM.Model.Accounts.Base
 {

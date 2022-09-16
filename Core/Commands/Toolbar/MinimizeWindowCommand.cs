@@ -1,6 +1,7 @@
 ﻿using System.Windows;
+using BankingAppMVVM.Core.Commands.Base;
 
-namespace BankingAppMVVM.Core.Commands
+namespace BankingAppMVVM.Core.Commands.Toolbar
 {
     public class MinimizeWindowCommand : Command
     {

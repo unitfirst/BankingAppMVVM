@@ -1,7 +1,7 @@
-﻿using BankingAppMVVM.MVVM.View.LoginWindow;
-using System.Windows;
+﻿using System.Windows;
+using BankingAppMVVM.Core.Commands.Base;
 
-namespace BankingAppMVVM.Core.Commands
+namespace BankingAppMVVM.Core.Commands.Toolbar
 {
     public class MoveWindowCommand : Command
     {

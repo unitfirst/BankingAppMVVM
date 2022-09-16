@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace BankingAppMVVM.Core
+namespace BankingAppMVVM.Core.Commands.Base
 {
     public abstract class Command : ICommand
     {

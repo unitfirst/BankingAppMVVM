@@ -1,6 +1,6 @@
-﻿using BankingAppMVVM.ViewModel.Base;
-using System;
+﻿using System;
 using System.Text.RegularExpressions;
+using BankingAppMVVM.MVVM.ViewModel.Base;
 
 namespace BankingAppMVVM.MVVM.Model.Accounts.ProtectedData
 {
