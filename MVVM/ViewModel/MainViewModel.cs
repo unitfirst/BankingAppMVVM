@@ -25,6 +25,7 @@ namespace BankingAppMVVM.MVVM.ViewModel
                 OnPropertyChanged();
             }
         }
+        public Employee Employee { get; private set; }
 
         #endregion
 
@@ -86,8 +87,8 @@ namespace BankingAppMVVM.MVVM.ViewModel
 
         #endregion
 
-
-        public MainViewModel()
+        public MainViewModel() { }
+        public MainViewModel(Employee employee)
         {
             #region Views
 
@@ -97,6 +98,7 @@ namespace BankingAppMVVM.MVVM.ViewModel
             AboutVM = new AboutViewModel();
 
             CurrentView = AccountsVM;
+            Employee = employee;
 
             #endregion
 
