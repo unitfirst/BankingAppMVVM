@@ -16,6 +16,7 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -179,6 +180,7 @@
     <Compile Include="Core\Commands\Toolbar\MoveWindowCommand.cs" />
     <Compile Include="Core\Commands\RelayCommand.cs" />
     <Compile Include="Core\Commands\Toolbar\ShutDownCommand.cs" />
+    <Compile Include="Core\Converters\UserModeToString.cs" />
     <Compile Include="MVVM\Model\Access\AccessValidator.cs" />
     <Compile Include="MVVM\Model\Access\Parameters\CommandAccess.cs" />
     <Compile Include="MVVM\Model\Access\Parameters\EditAccess.cs" />
@@ -299,7 +301,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Resource Include="MVVM\View\MainWindow\Views\Media\w-hand.gif" />
   </ItemGroup>

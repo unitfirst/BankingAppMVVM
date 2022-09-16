@@ -26,7 +26,6 @@ namespace BankingAppMVVM.MVVM.ViewModel
             }
         }
 
-        private Employee Employee { get; set; }
 
         #endregion
 
@@ -37,6 +36,8 @@ namespace BankingAppMVVM.MVVM.ViewModel
         private NewAccountViewModel NewAccountVm { get; set; }
         private AboutViewModel AboutVm { get; set; }
         public Account Account { get; set; }
+        public Employee Employee { get; set; }
+
 
         #endregion
 
