@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{499DB286-8889-461C-BEAC-B1CCDA431F9D}</ProjectGuid>
+        <OutputType>WinExe</OutputType>
+        <RootNamespace>BankingAppMVVM</RootNamespace>
+        <AssemblyName>BankingAppMVVM</AssemblyName>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <WarningLevel>4</WarningLevel>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <LangVersion>9</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+          <HintPath>packages\Newtonsoft.Json.13.0.2-beta2\lib\net45\Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+        <Reference Include="System.Xaml">
+            <RequiredTargetFramework>4.0</RequiredTargetFramework>
+        </Reference>
+        <Reference Include="WindowsBase" />
+        <Reference Include="PresentationCore" />
+        <Reference Include="PresentationFramework" />
+        <Reference Include="WpfAnimatedGif, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9e7cd3b544a090dc, processorArchitecture=MSIL">
+          <HintPath>packages\WpfAnimatedGif.2.0.2\lib\net40\WpfAnimatedGif.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <ApplicationDefinition Include="App.xaml">
+            <Generator>MSBuild:Compile</Generator>
+            <SubType>Designer</SubType>
+        </ApplicationDefinition>
+        <Compile Include="App.xaml.cs">
+            <DependentUpon>App.xaml</DependentUpon>
+            <SubType>Code</SubType>
+        </Compile>
+        <Compile Include="Core\Commands\Base\Command.cs" />
+        <Compile Include="Core\Commands\RelayCommand.cs" />
+        <Compile Include="Core\Commands\Toolbar\MaximizeWindowCommand.cs" />
+        <Compile Include="Core\Commands\Toolbar\MinimizeWindowCommand.cs" />
+        <Compile Include="Core\Commands\Toolbar\MoveWindowCommand.cs" />
+        <Compile Include="Core\Commands\Toolbar\ShutDownCommand.cs" />
+        <Compile Include="Core\Converters\UserModeToString.cs" />
+        <Compile Include="Data\Repository.cs" />
+        <Compile Include="Resources\Extensions.cs" />
+        <Page Include="MVVM\View\LoginWindow\LoginWindow.xaml" />
+        <Page Include="MVVM\View\MainWindow\MainWindow.xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <SubType>Designer</SubType>
+        </Page>
+        <Page Include="MVVM\View\MainWindow\Views\AboutView.xaml" />
+        <Page Include="MVVM\View\MainWindow\Views\AccountsView.xaml" />
+        <Page Include="MVVM\View\MainWindow\Views\NewAccountView.xaml" />
+        <Page Include="MVVM\View\MainWindow\Views\SettingsView.xaml" />
+        <Page Include="Resources\Icons.xaml" />
+        <Page Include="Themes\Nord\Button.Default.Nord.xaml" />
+        <Page Include="Themes\Nord\Button.Delete.Nord.xaml" />
+        <Page Include="Themes\Nord\ColorStyle.Nord.xaml" />
+        <Page Include="Themes\Nord\DataGrid.Nord.xaml" />
+        <Page Include="Themes\Nord\MenuButton.Nord.xaml" />
+        <Page Include="Themes\Nord\ResizeGrip.Nord.xaml" />
+        <Page Include="Themes\Nord\ScrollBar.Nord.xaml" />
+        <Page Include="Themes\Nord\SubTitle.Nord.xaml" />
+        <Page Include="Themes\Nord\TextBox.Default.Nord.xaml" />
+        <Page Include="Themes\Nord\TextBox.Search.Nord.xaml" />
+        <Page Include="Themes\Nord\Title.Nord.xaml" />
+        <Page Include="Themes\Nord\TitleBarButton.Nord.xaml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="MVVM\Model\Access\AccessValidator.cs" />
+        <Compile Include="MVVM\Model\Access\Parameters\CommandAccess.cs" />
+        <Compile Include="MVVM\Model\Access\Parameters\EditAccess.cs" />
+        <Compile Include="MVVM\Model\Accounts\Account.cs" />
+        <Compile Include="MVVM\Model\Accounts\AccountInfo.cs" />
+        <Compile Include="MVVM\Model\Accounts\Base\Person.cs" />
+        <Compile Include="MVVM\Model\Accounts\ProtectedData\Passport.cs" />
+        <Compile Include="MVVM\Model\Accounts\ProtectedData\PhoneNumber.cs" />
+        <Compile Include="MVVM\Model\Employees\Base\Employee.cs" />
+        <Compile Include="MVVM\Model\Employees\Consultant.cs" />
+        <Compile Include="MVVM\Model\Employees\Manager.cs" />
+        <Compile Include="MVVM\ViewModel\AboutViewModel.cs" />
+        <Compile Include="MVVM\ViewModel\AccountsViewModel.cs" />
+        <Compile Include="MVVM\ViewModel\Base\ViewModelBase.cs" />
+        <Compile Include="MVVM\ViewModel\LoginViewModel.cs" />
+        <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
+        <Compile Include="MVVM\ViewModel\NewAccountViewModel.cs" />
+        <Compile Include="MVVM\ViewModel\SettingsViewModel.cs" />
+        <Compile Include="MVVM\View\LoginWindow\LoginWindow.xaml.cs">
+          <DependentUpon>LoginWindow.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="MVVM\View\MainWindow\MainWindow.xaml.cs">
+          <DependentUpon>MainWindow.xaml</DependentUpon>
+          <SubType>Code</SubType>
+        </Compile>
+        <Compile Include="MVVM\View\MainWindow\Views\AboutView.xaml.cs">
+          <DependentUpon>AboutView.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="MVVM\View\MainWindow\Views\AccountsView.xaml.cs">
+          <DependentUpon>AccountsView.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="MVVM\View\MainWindow\Views\NewAccountView.xaml.cs">
+          <DependentUpon>NewAccountView.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="MVVM\View\MainWindow\Views\SettingsView.xaml.cs">
+          <DependentUpon>SettingsView.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="Properties\AssemblyInfo.cs">
+            <SubType>Code</SubType>
+        </Compile>
+        <Compile Include="Properties\Resources.Designer.cs">
+            <AutoGen>True</AutoGen>
+            <DesignTime>True</DesignTime>
+            <DependentUpon>Resources.resx</DependentUpon>
+        </Compile>
+        <EmbeddedResource Include="Properties\Resources.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="App.config" />
+        <None Include="packages.config" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="MVVM\View\MainWindow\Views\Media\w-hand.gif" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
